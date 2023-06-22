@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  color: red;
+  padding: 20px;
+  border: 10px solid rebeccapurple;
+  background-color: rosybrown;
+  text-align: right;
+  color: rebeccapurple;
+  align-items: center;
+  justify-content: center;
+  display: flex; 
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  z-index: 1;
+  color: rebeccapurple;
+  font-weight: bold;
+  font-size: 15px;
+  top: 15%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.coracao::after {
+  content: "\2665";
+  width: 30px;
+  height: 30px;
+  color: red;
+  position: relative
+  transform: rotate(45deg);
+  animation: pulse 1s infinite alternate;
+  align-items: center;
+  font-size: 200px;
+  border-radius: 10%;
+
+} 
+
+.coracao {
+width: 140px;
+height: 140px;
+position: relative;
+transform: rotate(45deg);
+animation: pulse 1s infinite alternate;
+border-radius: 5%;
+
+}
+
+@keyframes pulse {
+  0% {
+  transform: scale(1);
+  }
+  50% {
+  transform: scale(1.2);
+  }
+  100% {
+  transform: scale(1);
+  }
+}
+  
+  .pulse {
+    animation: pulse 1s infinite;
+}  
